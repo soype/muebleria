@@ -1,0 +1,15 @@
+$jet: #333333ff;
+$slate-gray: #6e8894ff;
+$cambridge-blue: #85baa1ff;
+$honeydew: #ceeddbff;
+$light-orange: #f5cda7ff;
+
+$background: $jet;
+$background-secondary: $slate-gray;
+$color: white;
+
+body {
+  background: $background;
+  color: $color;
+  font-family: Arial, Helvetica, sans-serif;
+}
