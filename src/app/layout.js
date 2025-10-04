@@ -3,6 +3,7 @@ import "./globals.css";
 import "@/style/globals.scss";
 
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,7 @@ export default function RootLayout({ children }) {
       >
         <Header menuItems={menuItems} />
         {children}
-        <footer className='footer'></footer>
+        <Footer />
       </body>
     </html>
   );
