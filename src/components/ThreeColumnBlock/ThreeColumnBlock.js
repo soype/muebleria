@@ -1,21 +1,28 @@
 import React from 'react'
+import Image from 'next/image'
 
-const ThreeColumnBlock = () => {
+
+// Expects a columns object with 3 column objects inside. 
+// Each column should have:
+// text: string
+// image: string
+// id: int
+const ThreeColumnBlock = ({columns}) => {
   return (
     <section className='threeColumnBlock'>
-        <div className='threeColumnBlock__container flex'>
-            <div className='threeColumnBlock__column w-[33%]'>
-                <div className='threeColumnBlock__image'></div>
-                <div className='threeColumnBlock__content px-4'>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies ultricies, nunc nisi aliquet nunc, eu tincidunt nisi nisl eu nisl. Aliquam erat volutpat.</h2>
-                </div>
-            </div>
-            <div className='threeColumnBlock__column w-[33%]'>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies ultricies, nunc nisi aliquet nunc, eu tincidunt nisi nisl eu nisl. Aliquam erat volutpat.</h2>
-            </div>
-            <div className='threeColumnBlock__column w-[33%]'>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies ultricies, nunc nisi aliquet nunc, eu tincidunt nisi nisl eu nisl. Aliquam erat volutpat.</h2>
-            </div>
+        <div className='threeColumnBlock__container flex flex-col md:flex-row'>
+            {columns.map((column) => {
+                return(
+                    <div className='threeColumnBlock__column w-full md:w-[33%] h-[300px] md:h-[500px] relative' key={column.id}>
+                        <div className='threeColumnBlock__image z-1'>
+                            <Image fill src={column.image} alt={column.text} size={'100vw'} className='z-1 object-cover'></Image>
+                        </div>
+                        <div className='relative threeColumnBlock__content px-8 h-full flex items-center justify-center z-2'>
+                            <h2>{column.text}</h2>
+                        </div>
+                    </div>
+                )
+            })}
         </div>
     </section>
   )
