@@ -6,12 +6,13 @@
 ///////
 
 .header {
-  &__inner {
-    background-color: rgba($background-secondary, 0.8);
-  }
+  background-color: rgba($background-secondary, 0.8);
 
   &__menu {
-    background-color: $background;
+    @media (max-width: 768px) {
+      background-color: $background;
+    }
+
     ul {
       list-style: none;
     }
