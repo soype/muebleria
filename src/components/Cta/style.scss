@@ -1,0 +1,17 @@
+//
+// Import any variables from your site here
+//
+
+@use "@/style/globals.scss" as *;
+
+.cta {
+  &__link {
+    background-color: $cambridge-blue;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $honeydew;
+    }
+  }
+}

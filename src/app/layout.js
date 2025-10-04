@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import Image from "next/image";
+import "./globals.css";
 import "@/style/globals.scss";
-import Link from "next/link";
+
+import Header from "@/components/Header/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,29 +20,20 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
+  const menuItems = [
+    { label: "Nosotros", href: "/nosotros" },
+    { label: "Catálogo", href: "/catalogo" },
+    { label: "Contacto", href: "/contacto" },
+  ]
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className='header flex justify-between items-center m-auto max-w-std'>
-          <div className='header__logo flex items-center'>
-            <Image
-              src='/logo.png'
-              alt='logo'
-              width={50}
-              height={50}
-              className='header__logo-image'
-            />
-          </div>
-          <div className='header__menu'>
-            <ul className='flex items-center gap-4'>
-              <li><Link href='/'>Nosotros</Link></li>
-              <li><Link href='/catalogo'>Catálogo</Link></li>
-              <li><Link href='/contacto'>Contacto</Link></li>
-            </ul>
-          </div>
-        </header>
+        <Header menuItems={menuItems} />
         {children}
         <footer className='footer'></footer>
       </body>

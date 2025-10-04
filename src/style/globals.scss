@@ -8,8 +8,17 @@ $background: $jet;
 $background-secondary: $slate-gray;
 $color: white;
 
+$max-width: 1200px;
+
 body {
   background: $background;
   color: $color;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.max-w-std {
+  max-width: 1200px;
 }

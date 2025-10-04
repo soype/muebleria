@@ -7,7 +7,7 @@
     padding-top: calc(100px + 2rem);
 
     &__container{
-        max-width: 1200px;
+        max-width: $max-width;
         margin: auto;
         display: flex;
         justify-content: space-between;

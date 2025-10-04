@@ -1,0 +1,9 @@
+//
+// Import any variables from your site here
+//
+
+.hero {
+  &__overlay {
+    background: linear-gradient(hsla(0, 0%, 100%, 0), rgba(36, 36, 36, 0.6) 50%, rgba(0, 0, 0, 0.7) 85%);
+  }
+}
