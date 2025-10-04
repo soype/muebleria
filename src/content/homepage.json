@@ -21,17 +21,17 @@
         "columns": [
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies ultricies, nunc nisi aliquet nunc, eu tincidunt nisi nisl eu nisl. Aliquam erat volutpat.",
-            "image": "https://picsum.photos/2000/3000",
+            "image": "https://picsum.photos/500/1000",
             "id": 1
           },
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies ultricies, nunc nisi aliquet nunc, eu tincidunt nisi nisl eu nisl. Aliquam erat volutpat.",
-            "image": "https://picsum.photos/2000/3000",
+            "image": "https://picsum.photos/500/1000",
             "id": 2
           },
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies ultricies, nunc nisi aliquet nunc, eu tincidunt nisi nisl eu nisl. Aliquam erat volutpat.",
-            "image": "https://picsum.photos/2000/3000",
+            "image": "https://picsum.photos/500/1000",
             "id": 3
           }
         ]

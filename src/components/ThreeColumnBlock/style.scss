@@ -1,0 +1,9 @@
+.threeColumnBlock{
+    &__column{
+        &:hover{
+            .threeColumnBlock__overlay{
+                opacity: .9;
+            }
+        }
+    }
+}
