@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero/Hero";
 import ThreeColumnBlock from "@/components/ThreeColumnBlock/ThreeColumnBlock";
 import TwoColumnBlock from "@/components/TwoColumnBlock/TwoColumnBlock";
+import ContactForm from "@/components/ContactForm/ContactForm";
 
 import content from "@/content/homepage.json";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <ThreeColumnBlock columns={content.components[1].props.columns} />
       <TwoColumnBlock content={content.components[2].content} />
       <TwoColumnBlock content={content.components[3].content} />
+      <ContactForm content={''} />
     </div>
   );
 }
