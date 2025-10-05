@@ -23,7 +23,7 @@ const TwoColumnBlock = ({ content }) => {
         </div>
         <div className="twoColumnBlock__column column-2 w-full md:w-[50%]">
           <div className=" twoColumnBlock__content h-full flex flex-col justify-center gap-4">
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             <p>{description}</p>
             {cta && <Cta text={cta.text} link={cta.link} ariaLabel={cta.ariaLabel} />}
           </div>
